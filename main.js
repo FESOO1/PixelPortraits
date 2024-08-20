@@ -1,4 +1,5 @@
 const galleryContainer = document.querySelector('.gallery');
+const galleryBackground = document.querySelector('.gallery-background');
 
 const dataPictures = [
     {
@@ -37,8 +38,9 @@ for (let i = 0; i < 10; i++) {
     <img src="${dataPictures[i].picture}" alt="an image" class="image-itself">
     `;
     newPicture.classList.add('image-container');
-
     galleryContainer.appendChild(newPicture);
 
-    
+    newPicture.addEventListener('click', () => {
+        
+    })
 };
