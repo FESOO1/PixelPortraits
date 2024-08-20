@@ -152,7 +152,7 @@ nav {
 }
 
 .image-container:hover .image-itself {
-    scale: 1.15;
+    scale: 1.1;
 }
 
 /* GALLERY BACKGROUND */
@@ -165,14 +165,13 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(2px);
-    /* display: flex; */
     display: none;
     justify-content: center;
     align-items: center;
 }
 
 .gallery-background > img {
-    height: 92%;
+    height: 94%;
     object-fit: cover;
     border-radius: 1rem;
 }

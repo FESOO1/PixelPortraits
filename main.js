@@ -1,5 +1,7 @@
 const galleryContainer = document.querySelector('.gallery');
 const galleryBackground = document.querySelector('.gallery-background');
+const galleryBackgroundImage = document.querySelector('.gallery-background-image');
+const body = document.querySelector('body');
 
 const dataPictures = [
     {
@@ -41,6 +43,13 @@ for (let i = 0; i < 10; i++) {
     galleryContainer.appendChild(newPicture);
 
     newPicture.addEventListener('click', () => {
-        
-    })
+        galleryBackgroundImage.setAttribute('src', dataPictures[i].picture);
+        galleryBackground.style.display = 'flex';
+        body.style.overflow = 'hidden';
+
+        galleryBackground.addEventListener('click', () => {
+            galleryBackground.style.display = 'none';
+            body.style.overflow = 'unset';
+        });
+    });
 };
