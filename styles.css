@@ -171,7 +171,7 @@ nav {
 }
 
 .gallery-background > img {
-    height: 94%;
+    height: 95%;
     object-fit: cover;
     border-radius: 1rem;
 }
@@ -181,6 +181,9 @@ nav {
 @media (max-width: 1200px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-background > img {
+        width: 90%;
     }
 }
 
