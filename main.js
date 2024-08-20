@@ -39,4 +39,6 @@ for (let i = 0; i < 10; i++) {
     newPicture.classList.add('image-container');
 
     galleryContainer.appendChild(newPicture);
+
+    
 };
