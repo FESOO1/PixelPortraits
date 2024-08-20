@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --f-dancing: "Dancing Script", cursive;
+    --f-dm-sans: "DM Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12,12,12);
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+/* NAVBAR */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NAVBAR TOP */
+
+/* .navbar-top {
+
+} */
+
+/* LOGO */
+
+.logo {
+    margin-top: 8px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--f-dm-sans);
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2.2rem;
+}
+
+/* ABOUT US */
+
+.who-we-are {
+    padding: 5px 20px;
+}
+
+.logo-text {
+    color: white;
+}
+
+.who-we-are > p {
+    font-family: var(--f-dm-sans);
+    color: rgb(180, 180, 180);
+    font-weight: 300;
+}
+
+/* NAVBAR BOTTOM */
+
+.navbar-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 5px;
+}
+
+.link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-text {
+    font-family: var(--f-dm-sans);
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.4rem;
+    transition: color 300ms;
+}
+
+.link-svg {
+    transform: translateY(4px) rotateZ(45deg);
+    opacity: 0;
+    transition: transform 700ms, opacity 700ms;
+}
+
+.link-divider {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.link:hover .link-svg {
+    opacity: 1;
+    transform: translateY(4px) rotateZ(0);
+    transition: transform 300ms, opacity 300ms;
+}
+
+.link:hover .link-text {
+    color: rgb(180, 180, 180);
+}
+
+/* GALLERY */
+
+.gallery {
+    width: 100%;
+}
