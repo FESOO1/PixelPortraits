@@ -75,8 +75,8 @@ nav {
 
 .who-we-are > p {
     font-family: var(--f-dm-sans);
-    color: rgb(180, 180, 180);
-    font-weight: 300;
+    color: rgb(190, 190, 190);
+    font-weight: 200;
 }
 
 /* NAVBAR BOTTOM */
@@ -183,7 +183,8 @@ nav {
         grid-template-columns: repeat(2, 1fr);
     }
     .gallery-background > img {
-        width: 90%;
+        width: 95%;
+        height: 98%;
     }
 }
 
